@@ -1,0 +1,19 @@
+{
+	"name": "AzureDataLakeStore1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://abcdlstore.azuredatalakestore.net/webhdfs/v1",
+			"servicePrincipalId": "69e3bb88-e26c-4ed9-b3ff-29274f44ebc1",
+			"tenant": "1ecd5c46-fe6c-450f-a1ce-f5c3d3a0306f",
+			"subscriptionId": "2a29d05b-ff6c-4de6-892a-4ec22c8ddb3d",
+			"resourceGroupName": "Migrate_RG",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2ZGMyZDkxYi02MTUwLTQ2ZDctYjUxOS1iYmJiMTE0ZTRlMDMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SQLIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "AzureBatch1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureBatch",
+		"typeProperties": {
+			"accountName": "newazbatch",
+			"batchUri": "https://newazbatch.eastasia.batch.azure.com",
+			"poolName": "newpool",
+			"linkedServiceName": {
+				"referenceName": "AzureBlobStorage2",
+				"type": "LinkedServiceReference"
+			},
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2MDdiZmMyOC1lODE0LTRiMmYtYjM4Ni00OTY0NTE5NDgxYzUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SQLIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
